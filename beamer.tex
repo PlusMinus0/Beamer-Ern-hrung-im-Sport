@@ -11,6 +11,9 @@
 
 \usepackage{multicol}
 
+\usepackage[sorting=none]{biblatex}
+\addbibresource{literature.bib}
+
 \usetheme{frisbeesportverband}
 
 \title{Ernährung im Ultimate}
@@ -30,11 +33,39 @@
 
 \section{Grundlagen}
 \begin{frame}
+  \frametitle{Vorweg}
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \begin{itemize}
+        \begin{itemize}
+        \item Erkenntnisse aus Sport- und Ernährungswissenschaften ändern sich ständig
+        \item Heute Goldstandard, morgen Quatsch
+        \item Unter Umständen vereinfacht dargestellt
+        \item Quelle, falls nicht anders angegeben:\\ \textcite{raschka2015sport}
+        \end{itemize}
+
+      \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.3\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth, height=0.8\textheight, keepaspectratio]{images/iceberg.png}      
+        \caption{Nach \cite{kils2005iceberg}}
+        \label{fig:iceberg}
+      \end{figure}
+    \end{column}
+    
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
   \frametitle{Nährstoffe}
   \begin{multicols}{2}
     \begin{itemize}
       
-    \item Hauptnährstoffe
+    \item<+-> Hauptnährstoffe
       \begin{itemize}
       \item Kohlenhydrate
       \item Protein
@@ -43,18 +74,18 @@
       \item Ballaststoffe
       \end{itemize}
       
-    \item Wasser
+    \item<+-> Wasser
       
       \vfill\null
       \columnbreak
       
-    \item Mikronährstoffe
+    \item<+-> Mikronährstoffe
       \begin{itemize}
       \item Fettlösliche Vitamine (E, D, K, A)
       \item Wasserlösliche Vitamine (B, C)
       \end{itemize}
       
-    \item Mineralstoffe
+    \item<+-> Mineralstoffe
       \begin{itemize}
       \item Mengenelemente (Elektrolyte)
       \item Spurenelemente
@@ -70,50 +101,58 @@
 
 \section{Kohlenhydrate}
 \begin{frame}
-  \frametitle{Kohlenhydrate}
+  \frametitle{Übersicht}
   \begin{itemize}
   \item Kohlenhydrate sind wichtigster Energielieferant
+    \begin{itemize}
+    \item Stellen Energie schnell zur Verfügung
+    \item Emfehlung: 60\% der Energiezufuhr aus Kohlenhydraten
+    \end{itemize}
+
   \item Sportler nehmen oft zu wenige Kohlenhydrate auf
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Kohlenhydrate Auswahl}
+  \frametitle{Auswahl}
+  \begin{multicols}{2}
   \begin{itemize}
-  \item Grundbaustein: Monosaccharide (Einfachzucker)
+  \item<+-> Grundbaustein: Monosaccharide (Einfachzucker)
     \begin{itemize}
     \item Glucose, Fructose (Früchte, Honig, kleine Mengen in Pflanzen)
     \end{itemize}
-  \item Zwei- und Mehrfachzucker:
+  \item<+-> Zwei- und Mehrfachzucker:
     \begin{itemize}
-    \item Disaccharide
+    \item<+-> Disaccharide
       \begin{itemize}
       \item Saccharose (Zuckerrübe, Zuckerrohr, Früchte)
       \item Lactose (Milch und Milchprodukte)
       \item Maltose (Abbauprodukt von Stärke)
       \end{itemize}
-    \item Oligosaccharide (3-10 Einfachzucker)
+      
+      \vfill\null
+      \columnbreak
+    \item<+-> Oligosaccharide (3-10 Einfachzucker)
       \begin{itemize}
       \item Raffinose (Zuckerrübenmelasse, Honig, Hülsenfrüchte)
       \end{itemize}
-    \item Polysaccharide (>10 Einfachzucker)
+    \item<+-> Polysaccharide (>10 Einfachzucker)
       \begin{itemize}
       \item pflanzliche Stärke (Stärke, Getreide, Kartoffeln)
       \item tierische Stärke (Artischoken, Chicorée, Zwiebeln, Spargel, Bananen)
       \end{itemize}
-    \item Künstliche Zucker
+    \item<+-> Künstliche Zucker
       \begin{itemize}
       \item Dextrose
       \item Glukosesirup
       \end{itemize}
 
-
-
-
     \end{itemize}
 
   \end{itemize}
+\end{multicols}
 \end{frame}
+
 \begin{frame}[allowframebreaks]
   \frametitle{Glykämischer Index}
   \begin{itemize}
@@ -129,14 +168,28 @@
     \end{itemize}
 
   \end{itemize}
+\framebreak
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      Aber
 
-  Aber
+      \begin{itemize}
+      \item Blutzuckerspiegel bei Sportlern steigt langsamer
+      \item GI von Mahlzeiten schwer abschätzbar
+      \end{itemize}
+      
+    \end{column}
+    
+    \begin{column}{0.3\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth, height=0.8\textheight, keepaspectratio]{images/alexander-mils-372238-unsplash.jpg}      
+        \caption{Müsli \cite{mills2017vegan}}
+        \label{fig:breakfast}
+      \end{figure}
+    \end{column}
+  \end{columns}
 
-  \begin{itemize}
-  \item Blutzuckerspiegel bei Sportlern steigt langsamer
-  \item GI von Mahlzeiten schwer abschätzbar
-  \end{itemize}
-  
   \framebreak
 
   Vereinfacht
@@ -161,49 +214,118 @@
   
 \end{frame}
 
+\section{Fette}
 \begin{frame}
-  \frametitle{Bedeutung für Sportler}
-
+  \frametitle{Übersicht}
   \begin{itemize}
-  \item Kohlenhydrate sind wichtiger Energielieferant
-  \item Vor dem Sport: Nahrung mit niedrigem GI
-  \item Während des Sports: Nahrung mit hohem GI
-  \item 
+  \item<+-> Energielieferant (empfohlen \~{} 30\% der Energiezufuhr)
+  \item<+-> Gute Energiedichte, aber langsame Freisetzung
+  \item<+-> Vitamin„lieferant“ (fettlösliche Vitamine)
+  \item<+-> Ungesättigte Fettsäuren (Flüssige Fette)
+    \begin{itemize}
+    \item Besonders Pflanzenöle
+    \item Einfach ungesättigte Fettsäuren (10-13\% der Energiezufuhr)
+    \item Mehrfach ungesättigte Fettsäuren (7-10\% der Energiezufuhr)
+    \end{itemize}
+
+  \item<+-> Gesättigte Fettsäuren (Feste fette) (10\% der Energiezufuhr)
+    \begin{itemize}
+    \item Besonders tierische Fette, Schokolade
+    \item Haben viel Cholesterin (wird nur in geringen Mengen benötigt)
+    \end{itemize}
+
   \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Tipps}
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \begin{itemize}
+      \item<+-> Aufnahme gesättigter Fette reduzieren
+        \begin{itemize}
+        \item „versteckt“ in Wurst, Chips, Sahne, fettem Käse, Gebäck und Schokolade
+        \end{itemize}
+      \item<+-> Pflanzliche Fette bevorzugen (z.B. zum Anbraten, zum Salat)
+      \item<+-> Magere tierische Produkte
+        \begin{itemize}
+        \item Mageres Fleisch, Hartkäse, Magerquark, Hüttenkäse
+        \end{itemize}
+      \item<+-> Auf trans-Fettsäuren verzichten (enstehen bei Fetthärtung von Ölen)
+      \item<+-> Fisch statt Fleisch
+
+      \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.3\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth, height=0.8\textheight, keepaspectratio]{images/roberta-sorge-142255-unsplash.jpg}      
+        \caption{Olivenöl \cite{sorge2016oil}}
+        \label{fig:olvive-oil}
+      \end{figure}
+    \end{column}
+    
+  \end{columns}
+\end{frame}
+
+
+\section{Proteine}
+\begin{frame}
+  \frametitle{Übersicht}
+  \begin{itemize}
+  \item<+-> Ketten von Aminosäuren unterschiedlicher Länge
+  \item<+-> Etwa 20 verschiedene Aminosäuren $→$ viele verschiedene Proteine
+  \item<+-> Erfüllen Vielzahl von Funktionen
+    \begin{itemize}
+    \item Hormone, Enzyme, Antikörper
+    \item Bindegewebe, Haut, Haare, Muskelfasern
+    \end{itemize}
+  \item<+-> Größter Speicher: Muskeln (\~{} 60\%)
+  \item<+-> Wichtiger Baustoff für Muskeln
+  \item<+-> Gute Eiweißquellen:\\ Milch- und Milchprodukte, mageres Fleisch, Fisch, Eier, Hülsenfrüchte
+  \item<+-> Bedarf für Ausdauersportler: 1,2-1,4 g/kg (Frauen \~{} 10-20\% weniger)
+  \item<+-> 12-15\% der Gesamtenergieaufnahme
+
+  \end{itemize}
+
   
 \end{frame}
-
-
-\begin{frame} 
-  \frametitle{Blocks, enumerates and a long title} 
-  \begin{block}{\centering Theorem}
-    There is no largest prime number.
-  \end{block} 
-
-  \begin{enumerate} 
-  \item<1-| alert@1> Suppose $p$ were the largest prime number. 
-  \item<2-> Let $q$ be the product of the first $p$ numbers. 
-  \item<3-> Then $q+1$ is not divisible by any of them. 
-  \item<4-> But $q + 1$ is greater than $1$, thus divisible by some prime
-    number not in the first $p$ numbers.
-  \end{enumerate}
-\end{frame}
-
 \begin{frame}
-  \frametitle{A shorter title}
-  \begin{itemize}
-  \item one
-    \begin{itemize}
-    \item one.one
-    \end{itemize}
-  \item two
-  \end{itemize}
+  \frametitle{Proteinqualität}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+
+      \begin{itemize}
+      \item<+-> Biologische Wertigkeit, Referenz: Eiprotein
+      \item<+-> Körper kann Proteine höherer Qualität besser verarbeiten
+      \item<+-> Kombinieren von Proteinen mit pflanzlichen Proteinen
+      \item<+-> Qualität statt Quantität
+      \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.6\textwidth}
+      \visible<+->{
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth, height=0.8\textheight, keepaspectratio]{images/protein-quality.png}      
+        \caption{Proteinqualität}
+        \label{fig:proteine-quality}
+      \end{figure}}
+    \end{column}
+    
+  \end{columns}
 \end{frame}
+
+
+\section{Sonstiges}
+\section{Nahrungsergänzungsmittel}
+
 
 \section{Quellen}
 \begin{frame}
   \frametitle{Quellen}
-  Quellen
+  \printbibliography
+  
 
 \end{frame}
 
